@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+<style>
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    /* color: rgba(240, 248, 255, 0.856); */
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, p {
+    text-align: center;
+    margin: 40px auto;
+}
+form{
+    width: 60vw;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+fieldset{
+    border: none;
+    padding: 10px 0;
+}
+label{
+    display: block;
+    margin: 2px 0;
+}
+input, textarea, select{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 20px;
+}
+input, textarea{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    /* color: #ffff; */
+}
+
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 2px auto;
+    padding: 5px;
+    background-color: rgba(9, 177, 121, 0.801);
+    color: whitesmoke;
+    font-size: 16px;
+    min-width: 300px;
+}
+input[type="submit"]:hover{
+    color: whitesmoke;
+    background-color:rgba(9, 177, 59, 0.801);
+    cursor: pointer;
+}
+</style>
+
+    <h1>Survey Form</h1>
+    <p>Thank You for taking the time to help us improve the platfrom</p>
+    <form action="">
+        <fieldset>
+            <label>Name: <input type="text" name="Name" placeholder="Enter your Name" required></label>
+            <label>Email: <input type="text" name="email" placeholder="Enter your Email" required></label>
+            <label>Phone Number: <input type="number" name="phone" placeholder="Enter your Contact Number" required></label>
+            <label>Age(Optional): <input type="number" name="age" placeholder="Enter your Age"></label>
+            <br>
+            <label>
+                Which of the following describes your current role?
+                <select name="Role">
+                    <option value="">--Select One--</option>
+                    <option value="1">Student</option>
+                    <option value="2">Part-time</option>
+                    <option value="3">Full-time</option>
+                    <option value="4">Other</option>
+                    <option value="5">Prefer not to say</option>
+                </select>
+            </label>
+            <br>
+            <fieldset>
+                Would you recommend Lorem to a Friend?
+                <label><input type="radio" name="recommend" /> Definitely</label>
+                <label><input type="radio" name="recommend" /> Maybe</label>
+                <label><input type="radio" name="recommend" /> Not Sure</label>
+            </fieldset>
+            <br>
+            <label>
+                What is your favorite feature of Lorem?
+                <select name="Features">
+                    <option value="">--Select One--</option>
+                    <option value="1">This</option>
+                    <option value="2">That</option>
+                    <option value="3">Something</option>
+                    <option value="4">Nothing</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                What would you like to see us improved?
+                <input type="checkbox" name="1">Number1
+                <input type="checkbox" name="2">Number2
+                <input type="checkbox" name="3">Number3
+                <input type="checkbox" name="4">Number4
+                <input type="checkbox" name="5">Number5
+                <input type="checkbox" name="6">Number6
+            </label>
+            <br>
+            <label>
+                Anything you want us to recommend:
+            <textarea name="Suggestions"  cols="3" rows="10" placeholder="Write down your suggestions"></textarea>
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
